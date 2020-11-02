@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/color"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/balls"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:text="REU A - 14H00 - Peach" />
+
+        <TextView
+            android:id="@+id/adressmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:textColor="#151515"
+            tools:text="hugo.ban@hotmail.fr. hugo.ban@hotmail.fr. hugo.ban@hotmail.fr. hugo.ban@hotmail.fr." />
+</LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/removereu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:tint="#000000"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+
+        />
+
+</LinearLayout>
